@@ -1,0 +1,83 @@
+.feedback_page .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.form__type__head{
+	display: inline-block;
+    width: 276px;
+    margin-top: 12px;
+	vertical-align: top;
+	
+}
+.form_type_big{
+    .form-input{
+        padding: 0 10px;
+        height: 40px;
+    }
+    textarea.form-input{
+        height: auto;
+    }
+}
+.form__type__head .button{
+    float: right;
+}
+.form__row{
+    margin-bottom: 8px;
+	text-align: left;
+}
+.form__type__head .form__row:last-child{
+    line-height: 14px;
+}
+
+.form-input{
+    width: 100%;
+    border-radius: 3px;
+    border:1px solid #00265f;
+    padding: 0 5px;
+    height: 27px;
+}
+textarea.form-input{
+    height: auto;
+}
+.form-input:focus{
+    outline: none;
+}
+
+
+.form-link{
+    font-size: 12px;
+}
+.error-message{
+    color: @error;
+}
+.form__row.has-error{
+    label{
+        color: @error;  
+    }
+    .form-input{
+        border-color: @error;
+    }
+}
+
+
+.auth-main {
+    margin-top: 64px;
+}
+
+#menu-btn-login {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 8px;
+    background: url(../../images/show-file.png) no-repeat center #00265f !important;
+    border: 1px solid #ffffff !important;
+    width: 42px;
+    height: 36px;
+}
+
+#menu-btn-login .icon-bar {
+    display: none!important;
+}

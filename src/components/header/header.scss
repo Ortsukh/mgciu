@@ -1,0 +1,194 @@
+.header {
+    position: relative;
+    height: 121px;
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-content {
+        width: 66%;
+        position: relative;
+        display: block;
+        display: flex;
+
+        &-title {
+            width: 82%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+            align-items: center;
+
+            &-name1 {
+                color: #83a2d4;
+                font-size: 25.2px;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+
+            &-name2 {
+                font-size: 32px;
+                line-height: 40px;
+                text-transform: uppercase;
+                color: #00265f;
+            }
+
+            &-text {
+                font-size: 15px;
+                color: #040d1a;
+            }
+
+        }
+
+        &-logo_img {
+
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            z-index: 30;
+            width: 16%;
+            -webkit-animation: tick 15s infinite;
+            animation: tick 15s infinite;
+
+        }
+    }
+
+    &-form {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        line-height: 1.42857143;
+        color: #333;
+        font-size: 12px;
+        text-align: right;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        display: inline-block;
+        width: 276px;
+        margin-top: 12px;
+        vertical-align: top;
+
+        &-row {
+
+            margin-bottom: 8px;
+            text-align: left;
+
+            & a {
+                color: #333;
+            }
+
+            & input {
+
+                width: 100%;
+                border-radius: 3px;
+                border: 1px solid #00265f;
+                padding: 0 5px;
+                height: 27px;
+            }
+
+            &:last-child {
+                line-height: 14px;
+            }
+
+
+        }
+
+        &-button {
+
+            color: white;
+            padding: 5px 20px;
+            border: 1px solid white;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition-duration: .3s;
+            transition-timing-function: ease;
+            background: #00265f;
+            float: right;
+        }
+
+        &-wrapper {
+            width: 33%;
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
+
+    &-flag {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 25px;
+
+        &-ru {
+            width: 38px;
+            height: 25px;
+            background-image: url(../../assets/images/flags.jpg);
+            background-position: -38px 0;
+            opacity: .3;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        &-active {
+            opacity: 1;
+        }
+
+        &-en {
+            margin-bottom: 10px;
+            width: 38px;
+            height: 25px;
+            background-image: url(../../assets/images/flags.jpg);
+            background-position: 38px 0;
+            opacity: .3;
+            display: block;
+        }
+
+        &-by {
+            margin-bottom: 10px;
+            width: 38px;
+            height: 25px;
+            background-image: url(../../assets/images/flags.jpg);
+
+            background-position: 0px 0;
+            opacity: .3;
+            display: block;
+        }
+    }
+}
+
+@keyframes tick {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(120deg);
+    }
+
+    45% {
+        transform: rotate(120deg);
+    }
+
+    50% {
+        transform: rotate(240deg);
+    }
+
+    70% {
+        transform: rotate(240deg);
+    }
+
+    75% {
+        transform: rotate(120deg);
+    }
+
+    95% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,62 @@
+button:active, button:focus{
+    outline: none;
+}
+.button{
+    border-radius: 3px;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+     
+}
+.button:hover{
+    text-decoration: none;	
+    background: transparent;
+    &:hover{
+        background: rgba(255,255,255,0.1);
+    }
+}
+.button:focus{
+    outline: none;
+    text-decoration: none;
+}
+.button:active{
+    box-shadow: inset 0px 1px 5px #000;
+    text-decoration: none;
+}
+.button.button__size__big{
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.button.button__size__big:hover{
+    text-decoration: none;
+    color: white;
+}
+.button.button__size__big:focus{
+    color: white;
+}
+.button.button__active{
+    // background: @button-blue;
+}
+.button.button__blue{
+    // background: @button-blue;
+    // &:hover{
+    //     background: darken(@button-blue, 10%);
+    //     color: #ffffff;
+    // }
+}
+.button.button__light-blue{
+    background: #83a2d4;
+    &:hover{
+        background: darken(#83a2d4, 10%);
+        color: #ffffff;
+    }
+}
+.logout-button{
+    float: right;
+    margin-top: 80px;
+    margin-right: -10px;
+}
