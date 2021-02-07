@@ -64,7 +64,30 @@ function NewsPage() {
             О некоторых вопросах переустройства и перепланировки, установки на крышах и фасадах многоквартирных жилых домов индивидуальных антенн и иных конструкций, а также реконструкции жилых домов        </p>
         <a href="http://mgciu.demo-upit.by/news/2014-11-23_12_58_58" className="button button__light-blue">Подробнее</a>
     </div>
-</div></div><div className="keys" style="display:none" title="/news"><span>12</span><span>13</span><span>9</span></div>
+</div></div>
+<div class='pager'>
+            <ul class='pager pager_align_center g-m-top_40' id='yw1'>
+              <li class='pager__first hidden'>
+                <a href='/partners/index'>&lt;&lt; Первая</a>
+              </li>
+              <li class='pager__previous hidden'>
+                <a href='/partners/index'>&lt; Предыдущая</a>
+              </li>
+              <li class='pager__page pager__selected'>
+                <a href='/partners/index'>1</a>
+              </li>
+              <li class='pager__page'>
+                <a href='/partners/index/Partners_page/2'>2</a>
+              </li>
+              <li class='pager__next'>
+                <a href='/partners/index/Partners_page/2'>Следующая &gt;</a>
+              </li>
+              <li class='pager__last'>
+                <a href='/partners/index/Partners_page/2'>Последняя &gt;&gt;</a>
+              </li>
+            </ul>
+          </div>
+<div className="keys" title="/news"><span>12</span><span>13</span><span>9</span></div>
 </div></div>
 
     );

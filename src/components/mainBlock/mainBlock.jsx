@@ -1,5 +1,7 @@
 import React from 'react';
-// import {  dashboardProps} from '../../constants/interfaces';
+import {
+    Link
+  } from 'react-router-dom';
 function MainBlock() {
 
     // Component code start
@@ -92,7 +94,7 @@ function MainBlock() {
                 Инжитрэйд            </span>
         </a>    
                 <div className="partner-btn col-lg-2 col-md-12 col-sm-4 col-xs-6">
-            <a href="http://mgciu.demo-upit.by/partners/index" className="button button__size__big button__blue">Просмотреть все</a>
+            <Link to="/partners" className="button button__size__big button__blue">Просмотреть все</Link>
         </div>
     </div>
     <div className="row center-row g-align-center">

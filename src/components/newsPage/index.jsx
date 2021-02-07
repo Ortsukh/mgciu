@@ -1,4 +1,4 @@
-import MainSlider from './mainSlider';
+import NewsPage from './newsPage';
 
 
-export default MainSlider;
+export default NewsPage;

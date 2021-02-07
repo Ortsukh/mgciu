@@ -1,48 +1,49 @@
 import React from 'react';
 import '../../css/ace-responsive-menu.css'
-// import './navigation.scss';
-// import {  dashboardProps} from '../../constants/interfaces';
+import {
+    Link
+  } from 'react-router-dom';
 function Navigation() {
 
     // Component code start
     return (
-        <div class="container wrapper wrapper_full_width">
-        <div class="wrapper__menu row">
-            <nav class="navigation navigation_type_fixed">
-                <div class="container wrapper">
-                    <div class="navigation__main-menu">
-                        <div class="menu-toggle ative" >                        
+        <div className="container wrapper wrapper_full_width">
+        <div className="wrapper__menu row">
+            <nav className="navigation navigation_type_fixed">
+                <div className="container wrapper">
+                    <div className="navigation__main-menu">
+                        <div className="menu-toggle ative" >                        
                             <button type="button" id="menu-btn">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
                             </button>
                         </div>
-                        <div class="menu-toggle ative" >                        
+                        <div className="menu-toggle ative" >                        
                             <button type="button" id="menu-btn-login">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
+                                <span className="icon-bar"></span>
                             </button>
                         </div>
-                        <ul class="main-menu ace-responsive-menu ative_block" data-menu-style="horizontal" id="main_menu" >
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a class="main-menu-item" href="/news">Новости</a></li>
-<li class="main-menu__item g-do_transition main-menu-item_has_child main-menu__item g-do_transition"><a class="main-menu-item" href="/page/about_company">О компании</a>
-<ul class="sub-menu">
-<li class="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><a href="/structure">Структура компании</a></li>
+                        <ul className="main-menu ace-responsive-menu ative_block" data-menu-style="horizontal" id="main_menu" >
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link className="main-menu-item" to="/news">Новости</Link></li>
+<li className="main-menu__item g-do_transition main-menu-item_has_child main-menu__item g-do_transition"><Link className="main-menu-item" to="/about_company">О компании</Link>
+<ul className="sub-menu">
+<li className="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><Link to="/structure">Структура компании</Link></li>
 </ul>
 </li>
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a class="main-menu-item" href="/regulatoryframework">Нормативно-правовая база</a></li>
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a class="main-menu-item" href="/services">Услуги</a></li>
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a class="main-menu-item" href="/page/odno_okno">Одно окно</a></li>
-<li class="main-menu__item g-do_transition main-menu-item_has_child main-menu__item g-do_transition"><a class="main-menu-item" href="/feedback">Обратная связь</a>
-<ul class="sub-menu">
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a href="/feedback/reviews">Отзывы</a></li>
-<li class="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><a href="/feedback/questions">Вопрос-ответ</a></li>
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link className="main-menu-item" to="/regulatoryframework">Нормативно-правовая база</Link></li>
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link className="main-menu-item" to="/services">Услуги</Link></li>
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link className="main-menu-item" to="/odno_okno">Одно окно</Link></li>
+<li className="main-menu__item g-do_transition main-menu-item_has_child main-menu__item g-do_transition"><Link className="main-menu-item" to="/feedback">Обратная связь</Link>
+<ul className="sub-menu">
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link to="/feedback/reviews">Отзывы</Link></li>
+<li className="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><Link to="/feedback/questions">Вопрос-ответ</Link></li>
 </ul>
 </li>
-<li class="main-menu__item g-do_transition main-menu__item g-do_transition"><a class="main-menu-item" href="/partners">Партнеры</a></li>
-<li class="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><a class="main-menu-item" href="/contacts">Контакты</a></li>
+<li className="main-menu__item g-do_transition main-menu__item g-do_transition"><Link className="main-menu-item" to="/partners">Партнеры</Link></li>
+<li className="main-menu__item g-do_transition main-menu-item_last main-menu__item g-do_transition"><Link className="main-menu-item" to="/contacts">Контакты</Link></li>
 </ul>                    </div>
                 </div>
             </nav>

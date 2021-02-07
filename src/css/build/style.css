@@ -1565,7 +1565,10 @@ textarea.form-input {
 .slider-content__bg.slider-content__bg_static {
     z-index: 10
 }
-
+.slider-content__bg.slider-content__bg_static div {
+   width: 100%;
+   height: 100%;
+}
 .slider-content__bg.slider-content__bg_static .ymaps-glass-pane.ymaps-events-pane {
     box-shadow: inset 0 0 250px rgba(0, 0, 0, 0.6)
 }
@@ -2709,4 +2712,17 @@ textarea.form-input {
 }
 .ative{
     display: block;
+}
+.mainSlider{
+    width: 300vw;
+    display: flex;
+    transform: translate3d(0px, 0px, 0px);
+    left: 0px;
+    transition: all 300ms ease 0s;
+}
+.mainSlider-item{
+    width: 100vw;
+}
+.g-m-bottom_10{
+margin-bottom: 10px;
 }

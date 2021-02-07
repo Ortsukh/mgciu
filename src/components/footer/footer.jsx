@@ -1,22 +1,22 @@
 import React from 'react';
 // import './header.scss';
 // import '../../assets/_scss/buttons.scss'
-import logo from '../../assets/images/logo.png'
-// import {  dashboardProps} from '../../constants/interfaces';
+import logo from '../../css/images/logo.png'
+import footerBg from '../../css/images/footer_bg.jpg'
 function Footer() {
 
   // Component code start
   return (
    
     <div className="container wrapper wrapper_full_width wrapper_footer">
-            <img className="wrapper__footer-bg" src="/images/footer_bg.jpg"/>
+            <img className="wrapper__footer-bg" src={footerBg}/>
             <div className="wrapper__footer-cover">
             </div>
             <div className="container wrapper">
                 <div className="footer row clearfix">
                     <div className="col-md-4 col-sm-12">
                         <a href="#" className="logo logo_type_footer">
-                            <img className="logo__img" src="/images/logo.png"/>
+                            <img className="logo__img" src={logo}/>
                             <div className="logo__header">
                                 <span className="logo-name-bold g-text-blue">Минский городской</span>
                                 <span className="logo-name-normal g-text-light-blue">центр инжиниринговых услуг</span>

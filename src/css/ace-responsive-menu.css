@@ -92,7 +92,7 @@ ul {
     content: "\f105" !important;
 }
 .ace-responsive-menu > li > ul.sub-menu {
-    display: none;
+ 
     list-style: none;
     clear: both;
     margin: 0;

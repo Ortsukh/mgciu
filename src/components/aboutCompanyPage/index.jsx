@@ -1,4 +1,4 @@
-import MainSlider from './mainSlider';
+import AboutCompanyPage from './aboutCompanyPage';
 
 
-export default MainSlider;
+export default AboutCompanyPage;
