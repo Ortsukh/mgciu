@@ -2,6 +2,48 @@ import React from 'react';
 // import './header.scss';
 // import '../../assets/_scss/buttons.scss'
 import logo from '../../css/images/logo.png'
+
+ const sendResource1= async (emailValue, passwordValue)=> {
+    let a = {
+      user: {
+        email: emailValue,
+        password: passwordValue,
+      },
+    };
+    const res = await fetch(`http://mgciu.by/login`, {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(a),
+    });
+    return await res.json();
+  }
+  const SignIn = async (email, password) => {
+    const res = await sendResource1(email, password);
+
+    if (res.user) {
+      return res
+    } else {
+      return res;
+    }
+  };
+console.log(SignIn('asdas', 'asdas')); 
+
+// handleSubmit = (event) => {
+//     const { sendData } = this.props;
+//     const { email, password } = this.state;
+
+//     sendData(email, password)
+//       .then((data) => {
+//         this.setState({ data });
+//         console.log(data);
+//       })
+//       .catch(() => this.setState({ error: true }));
+
+//     event.preventDefault();
+//   };
+
 // import {  dashboardProps} from '../../constants/interfaces';
 function Header() {
 
