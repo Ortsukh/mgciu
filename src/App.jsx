@@ -25,6 +25,7 @@ import ContactPage from './components/contactPage';
 import FaqPage from './components/faqPage';
 import ContactUsPage from './components/contactUsPage';
 import ReviewesPage from './components/reviewesPage';
+import OrganizationPage from './components/organizationPage';
 console.log(AboutCompanyPage);
 function App() {
   return (
@@ -69,6 +70,9 @@ function App() {
       </Route>
       <Route path="/feedback/questions">
       <FaqPage/>
+      </Route>
+      <Route path="/organizations">
+      <OrganizationPage/>
       </Route>
     </Switch>
     <Footer/>

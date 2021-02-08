@@ -2,6 +2,7 @@ import React from 'react';
 import {
     Link
   } from 'react-router-dom';
+
 function MainBlock() {
 
     // Component code start
@@ -58,7 +59,7 @@ function MainBlock() {
         </div>
             </div>
     <div className="row center-row g-align-center">
-        <a href="http://mgciu.demo-upit.by/services" className="button button__size__big button__blue">Все услуги</a>
+        <Link to="/services" className="button button__size__big button__blue">Все услуги</Link>
     </div>
     <div className="row center-row g-align-center">
         <div className="divisor"></div>
@@ -152,7 +153,7 @@ function MainBlock() {
         </div>
             </div>
     <div className="row center-row g-align-center">
-        <a href="http://mgciu.demo-upit.by/news" className="button button__size__big button__blue">Все новости</a>
+        <Link href="/news" className="button button__size__big button__blue">Все новости</Link>
     </div>
     <div className="row center-row g-align-center">
         <div className="divisor"></div>
@@ -196,7 +197,7 @@ function MainBlock() {
                 Сегодня ОАО «Минскпромстрой"  – это одна из самых крупных, технически оснащенных и опытных организаций Республики Беларусь, которая уверенно занимает ведущее место на рынке строительных услуг.            </p>
         </a>
                 <div className="organization-view-all col-xs-12">
-            <a href="http://mgciu.demo-upit.by/organizations/index" className="button button__size__big button__blue">Просмотреть все</a>
+            <Link to="/organizations" className="button button__size__big button__blue">Просмотреть все</Link>
         </div>
     </div>
     <div className="row center-row g-align-center">
