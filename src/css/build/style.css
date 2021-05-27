@@ -637,6 +637,22 @@ a.logo:hover {
         margin-left: 12%;
         width: 89%
     }
+    .header-form.form__type__head{
+        overflow: hidden;
+        max-height: 0;
+        transition: .5s ease;
+    }
+    .menu-toggle.nav{
+        display: block;
+      
+    }
+    .header-form.form__type__head.active{
+        max-height: 96px;
+    }
+    .menu-toggle.nav.active{
+       
+        max-height: 336px;
+    }
 }
 
 .logo_type_footer .logo__header {
@@ -1200,6 +1216,7 @@ h5.header {
         padding-left: 0;
         text-align: right
     }
+   
 }
 
 @media (max-width:991px) {
@@ -2584,7 +2601,14 @@ textarea.form-input {
     }
 
     .ace-responsive-menu {
-        background: #12305b !important
+        background: #12305b !important;
+        max-height: 0;
+        overflow: hidden;
+        min-height: 0;
+        transition: .5s ease;
+    }
+    .ace-responsive-menu.active {
+        max-height: 336px;
     }
 
     .ace-responsive-menu>li:first-child {

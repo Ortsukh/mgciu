@@ -2,7 +2,7 @@
 // import './App.css';
 // import './css/less/style.less'
 import "../src/css/bootstrap/css/bootstrap.css"
-// import "../src/css/build/test.css"
+import React, { useEffect, useState } from "react";
 import "../src/css/build/style.css"
 import {
   BrowserRouter as Router, Route, Switch, Redirect,
@@ -28,10 +28,17 @@ import ReviewesPage from './components/reviewesPage';
 import OrganizationPage from './components/organizationPage';
 console.log(AboutCompanyPage);
 function App() {
+  const [isActiveForm, setisActiveForm] = useState(false);
+
+  const activeForm=()=>{
+    setisActiveForm ((value) => !value);
+  }
+  
+
   return (
     <Router>
-    <Header/>
-    <Navigation/>
+    <Header isActiveForm = {isActiveForm}/>
+    <Navigation activeForm={activeForm}/>
     <Switch>
       <Route path="/"  exact >
       <MainSlider/>

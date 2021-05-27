@@ -86,7 +86,7 @@ function MainSlider() {
                     <div className='slider-content__description'>
                       формирование электронной версии топографических и
                       картографических материалов предоставление
-                      топографического плана в электронном виде{" "}
+                      топографического плана в электронном виде
                     </div>
                     <div className='slider-content__button'>
                       <a to='/s' className='button button__size__big'>

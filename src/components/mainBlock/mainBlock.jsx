@@ -153,7 +153,7 @@ function MainBlock() {
         </div>
             </div>
     <div className="row center-row g-align-center">
-        <Link href="/news" className="button button__size__big button__blue">Все новости</Link>
+        <Link to="/news" className="button button__size__big button__blue">Все новости</Link>
     </div>
     <div className="row center-row g-align-center">
         <div className="divisor"></div>
